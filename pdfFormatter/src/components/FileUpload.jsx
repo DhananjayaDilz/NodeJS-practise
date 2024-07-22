@@ -103,13 +103,14 @@ const FileUpload = () => {
 
   return (
     <div>
-      <h1>PDF Uploader</h1>
+      <h1>PDFs Uploader</h1>
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleFileChange} accept="application/pdf" />
         <button type="submit">Upload</button>
       </form>
       {downloadLink && (
         <a href={downloadLink} download="modified.pdf">Download Modified PDF</a>
+
       )}
     </div>
   );
